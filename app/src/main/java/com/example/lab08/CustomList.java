@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CustomList {
+    //This is a comment
     private List<City> cities;
 
     public CustomList() {
