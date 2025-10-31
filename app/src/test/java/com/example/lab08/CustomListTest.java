@@ -22,6 +22,8 @@ public class CustomListTest {
         list.deleteCity(calgary);
         //Check that this city is gone.
         assertFalse(list.hasCity(calgary));
+        //Check that trying to delete a non-existent city throws an exception
+        assertThrows(IllegalArgumentException.class, () -> list.deleteCity(calgary));
     }
 
 }
